@@ -1,11 +1,15 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class EnemyMnager : MonoBehaviour
 {
     private GameObject PlayerLocate;
     [SerializeField] private int distancia;
     [SerializeField] private float speed;
+
+    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
