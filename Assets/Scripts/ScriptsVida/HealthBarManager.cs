@@ -23,5 +23,7 @@ public class HealthBarManager : MonoBehaviour
     void Update()
     {
 
+
     }
+
 }
