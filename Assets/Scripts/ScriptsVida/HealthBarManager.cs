@@ -18,10 +18,10 @@ public class HealthBarManager : MonoBehaviour
         healthBar = GetComponent<Slider>();
         healthManager = GetComponentInParent<HealthManager>();      
     }
-
+    /*  COMENTO ESTA PARTE PORQUE TIRA ERROR 
     // Update is called once per frame
     void Update()
     {
         healthBar.ba
-    }
+    }*/
 }
