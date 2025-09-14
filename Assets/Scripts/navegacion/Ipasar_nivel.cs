@@ -2,7 +2,7 @@ using UnityEngine;
 
 public interface Ipasar_nivel
 {
-    void pasar_nivel();
+    public void pasar_nivel();
 }
 
 

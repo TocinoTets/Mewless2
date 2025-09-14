@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class Navegacion : MonoBehaviour
 {
-    
+
     public void inicio() 
     {
         SceneManager.LoadScene("SampleScene"); 

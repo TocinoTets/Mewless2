@@ -2,7 +2,7 @@ using UnityEngine;
 
 public interface IHealth
 {
-    int Health {  get; set; }
-    void TakeDamage();
-    void Death();
+    float Health {  get; set; }
+    public void TakeDamage(float damage);
+    public void Death();
 }

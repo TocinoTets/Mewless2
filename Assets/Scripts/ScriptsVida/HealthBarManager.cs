@@ -1,11 +1,9 @@
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class HealthBarManager : MonoBehaviour
 {
-    Slider healthBar;
-    
-    Camera cam;
+    Image imageHealthBar;
 
     HealthManager healthManager;
 
@@ -14,16 +12,14 @@ public class HealthBarManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        cam = Camera.main;
-        healthBar = GetComponent<Slider>();
-        healthManager = GetComponentInParent<HealthManager>();      
+        imageHealthBar = GetComponentInChildren<Image>();
+        healthManager = GetComponentInParent<HealthManager>();    
     }
 
     // Update is called once per frame
     void Update()
     {
-
-
+        imageHealthBar.fillAmount = healthManager.Health / 100f;   
     }
 
 }
