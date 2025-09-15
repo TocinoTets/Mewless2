@@ -7,13 +7,15 @@ public class HealthManager : MonoBehaviour , IHealth
     public float Health { get { return health; } set { health = value; } }
     public void TakeDamage(float damage) 
     {
-        Debug.Log("ay");
         health -= damage;
-        anim.SetBool("Daño", true);
+        //anim.SetBool("Daño", true);
         if (health <= 0)
         {
             Death();
         }
     }
-    public void Death() { }
+    public void Death() 
+    {
+        Destroy(gameObject);
+    }
 }
