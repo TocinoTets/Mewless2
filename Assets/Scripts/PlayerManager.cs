@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    [SerializeField] private float velocidad;
+    
     [SerializeField] private float longitudAtaque;
     [SerializeField] private float dañoAtaque;
     [SerializeField] private GameObject spawnAtack;
@@ -33,15 +33,5 @@ public class PlayerManager : MonoBehaviour
                 }
             }
         }
-    }
-
-
-    private void FixedUpdate()
-    {
-        //movimienot del jugador
-        float Horizontal = Input.GetAxisRaw("Horizontal");
-
-        transform.Translate(Horizontal * Time.deltaTime * velocidad, 0, 0);
-        
     }
 }
