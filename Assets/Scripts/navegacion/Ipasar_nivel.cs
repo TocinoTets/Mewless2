@@ -1,8 +1,10 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public interface Ipasar_nivel
 {
     public void pasar_nivel();
+
 }
 
 
