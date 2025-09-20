@@ -13,6 +13,19 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
 
+
+        /*esto de aca abajo es para q no se quede pegado en las paredes cuando saltas 
+         se supone q le cambias al rigidbody la friccion , q es masfacil sacarlo de una pero no se como*/
+        PhysicsMaterial2D sinFriccion = new PhysicsMaterial2D();
+        sinFriccion.friction = 0;
+        sinFriccion.bounciness = 0;
+
+        
+        Collider2D col = GetComponent<Collider2D>(); //ver si existe el colaider
+        if (col != null)//si existe el colaider cambialo por el de sin friccion
+        {
+            col.sharedMaterial = sinFriccion;
+        }
     }
 
     private void Update()
