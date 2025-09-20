@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthManager : MonoBehaviour , IHealth
 {
@@ -11,7 +12,7 @@ public class HealthManager : MonoBehaviour , IHealth
         //anim.SetBool("Daño", true);
         if (health <= 0)
         {
-            Death();
+            SceneManager.LoadScene("DefeatScene");
         }
     }
     public void Death() 
