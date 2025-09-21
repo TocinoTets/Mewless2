@@ -3,7 +3,7 @@ using UnityEngine;
 public class Skills : PlayerMovement
 {
     [SerializeField] private bool dobleSalto = false;
-    [SerializeField] private bool paredesAgarre = false;
+    [SerializeField] protected bool paredesAgarre = false;
     private int contadorSaltosJugador = 0;
     private int cantidadSaltos = 1;
     private Collider2D col;
@@ -35,6 +35,7 @@ public class Skills : PlayerMovement
 
         if (puedeMoverse && Input.GetButtonDown("Jump") && contadorSaltosJugador < cantidadSaltos)
         {
+
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);//rb.linearVelocity es cmo un MovePosition , pero este utiliza las fisicas y el otro lo teletrasnporta
             rb.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
 
@@ -45,7 +46,7 @@ public class Skills : PlayerMovement
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    protected virtual void OnCollisionEnter2D(Collision2D collision)
     {
 
         if (collision.gameObject.CompareTag("piso"))
@@ -54,7 +55,7 @@ public class Skills : PlayerMovement
             col.sharedMaterial = sinFriccion;
         }
     }
-    private void OnCollisionStay2D(Collision2D collision)
+    protected virtual void  OnCollisionStay2D(Collision2D collision)
     {
         if (paredesAgarre && collision.gameObject.CompareTag("paredAgarre"))
         {

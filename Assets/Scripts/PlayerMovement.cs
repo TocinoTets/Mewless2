@@ -6,26 +6,30 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] protected float fuerzaSalto;
     protected bool puedeMoverse = true;
     protected Rigidbody2D rb;
-
+    protected Animator animaciones;
+    protected float horizontal;
     protected virtual void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        animaciones = GetComponent<Animator>();
     }
 
 
-    private void FixedUpdate()
+    protected void FixedUpdate()
     {
         if (puedeMoverse)
         {
-            float horizontal = Input.GetAxisRaw("Horizontal");
+            horizontal = Input.GetAxisRaw("Horizontal");
             if (horizontal < 0)
             {
-                rb.rotation = 180;
+                transform.localScale = new Vector3(-1, 1, 1);                
             }
             else if (horizontal > 0)
             {
-                rb.rotation = 0;
+
+                transform.localScale = new Vector3(1, 1, 1);
             }
+
             Vector2 movimiento = new Vector2(horizontal * velocidad, rb.linearVelocity.y);
             rb.linearVelocity = movimiento;
         }
