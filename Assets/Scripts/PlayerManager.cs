@@ -6,12 +6,8 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private float longitudAtaque;
     [SerializeField] private float dañoAtaque;
     [SerializeField] private GameObject spawnAtack;
-    protected Animator animaciones;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        animaciones = GetComponent<Animator>();
-    }
+
 
     // Update is called once per frame
     void Update()
@@ -21,7 +17,6 @@ public class PlayerManager : MonoBehaviour
         {
             //crea un rayo
             RaycastHit2D ray = Physics2D.Raycast(spawnAtack.transform.position, Vector2.right, longitudAtaque);
-            animaciones.SetTrigger("atacar");
             // pregunta si no es nulo
             if (ray.collider != null)
             {

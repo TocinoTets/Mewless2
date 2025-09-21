@@ -13,6 +13,8 @@ public class NewMonoBehaviourScript : Skills
         // Activa solo el que corresponde
         animaciones.SetBool(estado, true);
     }
+
+
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("piso"))
@@ -24,11 +26,14 @@ public class NewMonoBehaviourScript : Skills
     {
         base.OnCollisionStay2D(collision);
 
-
+        if (Input.GetMouseButtonDown(0) && !collision.gameObject.CompareTag("piso"))
+        {
+            animaciones.SetTrigger("atacar");
+        }
 
         if (collision.gameObject.CompareTag("piso"))
         {
-            Debug.Log(horizontal);
+            
             if (horizontal != 0)
             {
                 CambiarEstadoAnimacion("caminar");

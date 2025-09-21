@@ -23,7 +23,7 @@ public class Skills : PlayerMovement
         if (col != null)
         {
             conFriccion = col.sharedMaterial;
-            col.sharedMaterial = sinFriccion; 
+            col.sharedMaterial = sinFriccion;
         }
     }
     private void Update()
@@ -35,16 +35,18 @@ public class Skills : PlayerMovement
 
         if (puedeMoverse && Input.GetButtonDown("Jump") && contadorSaltosJugador < cantidadSaltos)
         {
-
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);//rb.linearVelocity es cmo un MovePosition , pero este utiliza las fisicas y el otro lo teletrasnporta
             rb.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
 
 
             contadorSaltosJugador++;
         }
-
-
+        if (Input.GetMouseButtonDown(0))
+        {
+            animaciones.SetTrigger("atacar");
+        }
     }
+
 
     protected virtual void OnCollisionEnter2D(Collision2D collision)
     {
@@ -55,7 +57,7 @@ public class Skills : PlayerMovement
             col.sharedMaterial = sinFriccion;
         }
     }
-    protected virtual void  OnCollisionStay2D(Collision2D collision)
+    protected virtual void OnCollisionStay2D(Collision2D collision)
     {
         if (paredesAgarre && collision.gameObject.CompareTag("paredAgarre"))
         {
@@ -64,4 +66,3 @@ public class Skills : PlayerMovement
         }
     }
 }
-
