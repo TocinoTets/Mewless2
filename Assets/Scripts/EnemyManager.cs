@@ -19,10 +19,22 @@ public class EnemyManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //MOVIMIENTO DEL ENEMIGO HACIA EL PLAYER
+        // MOVIMIENTO DEL ENEMIGO HACIA EL PLAYER
         if (Vector2.Distance(transform.position, PlayerLocate.transform.position) < distancia)
         {
             transform.position = Vector2.MoveTowards(transform.position, PlayerLocate.transform.position, speed * Time.deltaTime);
+
+            // ROTACIÓN DEL ENEMIGO HACIA EL PLAYER (IZQUIERDA O DERECHA)
+            if (PlayerLocate.transform.position.x < transform.position.x)
+            {
+                // Mira a la izquierda
+                transform.localScale = new Vector3(10, 13, 1);
+            }
+            else
+            {
+                // Mira a la derecha
+                transform.localScale = new Vector3(-10, 13, 1);
+            }
         }
 
     }

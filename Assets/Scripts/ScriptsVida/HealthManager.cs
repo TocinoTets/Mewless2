@@ -11,7 +11,7 @@ public class HealthManager : MonoBehaviour , IHealth
         health -= damage;
         if (health <= 0)
         {
-            SceneManager.LoadScene("DefeatScene");
+            Death();
         }
     }
     public void Death() 
