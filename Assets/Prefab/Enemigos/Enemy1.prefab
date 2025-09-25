@@ -301,6 +301,14 @@ PrefabInstance:
       value: CanvasHealthBar
       objectReference: {fileID: 0}
     - target: {fileID: 3730981352941099153, guid: ae472e27578b2884bb67a318eba86c8d, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3730981352941099153, guid: ae472e27578b2884bb67a318eba86c8d, type: 3}
+      propertyPath: m_Color.r
+      value: 0.018116474
+      objectReference: {fileID: 0}
+    - target: {fileID: 3730981352941099153, guid: ae472e27578b2884bb67a318eba86c8d, type: 3}
       propertyPath: m_Maskable
       value: 0
       objectReference: {fileID: 0}
