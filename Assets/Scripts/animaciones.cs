@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NewMonoBehaviourScript : Skills
+public class Animaciones : Skills
 {
 
     private void CambiarEstadoAnimacion(string estado)
