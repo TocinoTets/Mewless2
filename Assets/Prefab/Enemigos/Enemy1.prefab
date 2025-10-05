@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8169332697294987839}
   - component: {fileID: 1931428666505739519}
-  - component: {fileID: -1663265498832992732}
   - component: {fileID: 6772202852688726386}
   - component: {fileID: -3813332660195696642}
   - component: {fileID: 385347915221800457}
   - component: {fileID: 100268820137930533}
+  - component: {fileID: 8080734378929008357}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Enemy
@@ -93,22 +93,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-1663265498832992732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5003423695377448113}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c55c5c1cbdae584a9b574fb4e88aa99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distancia: 10
-  speed: 2
-  danoAtaque: 5
-  distancia_ataque: 0.2
 --- !u!114 &6772202852688726386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,6 +192,22 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0048542023, y: 0.01126084}
   m_Size: {x: 0.29608306, y: 0.22775622}
   m_Direction: 0
+--- !u!114 &8080734378929008357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5003423695377448113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97fef0b54037a904ab2c5204d97605d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distancia: 10
+  speed: 2
+  danoAtaque: 5
+  motion: 1
 --- !u!1001 &9058358780671214546
 PrefabInstance:
   m_ObjectHideFlags: 0

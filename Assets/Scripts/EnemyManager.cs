@@ -4,26 +4,23 @@ using UnityEngine.UIElements;
 
 public class EnemyManager : MonoBehaviour
 {
-    private GameObject PlayerLocate;
-    [SerializeField] private int distancia;
+    protected GameObject PlayerLocate;
+    [SerializeField] protected int distancia;
     [SerializeField] private float speed;
-    [SerializeField] private float danoAtaque;
-    [SerializeField] private float distancia_ataque;
+    [SerializeField] protected float danoAtaque;
     protected Animator animaciones;
-    private HealthManager enemyHealth;
-    private bool motion = true;
+    protected HealthManager enemyHealth;
+    [SerializeField] private bool motion = true;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
-    {
-        
+    {        
         PlayerLocate = GameObject.FindWithTag("Player");
         enemyHealth = GetComponent<HealthManager>();
         animaciones = GetComponent<Animator>();
-
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         if (motion)
         {
@@ -46,22 +43,11 @@ public class EnemyManager : MonoBehaviour
                 }
             }
         }
+
         if (enemyHealth != null && enemyHealth.Health <= 0)
         {
             GetComponent<Collider2D>().isTrigger = true;
-            motion = false; 
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            animaciones.SetTrigger("atacar");
-            GameObject gameObjectColiciono = collision.gameObject;
-            //la accion si coliciona con algo
-            gameObjectColiciono.GetComponent<HealthManager>().TakeDamage(danoAtaque);
+            motion = false;
         }
     }
 }
