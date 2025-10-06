@@ -2,23 +2,17 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField] private float speed = 10f;
-    private Vector2 direction;
-
-    // EL PORYECTIL NO SE MUEVE
-    // HAY QUE ARREGLARLO
-    public void SetDirection(Vector2 dir)
-    {
-        direction = dir.normalized;
-    }
-
-    void Start()
-    {
-        Destroy(gameObject, 2f);
-    }
+    private Vector3 direction;
+    [SerializeField] protected float speed = 10f;
 
     void Update()
     {
-        transform.Translate(direction * speed * Time.deltaTime);
+        // Mueve la bala en la dirección establecida
+        transform.position += direction * speed * Time.deltaTime;
+    }
+    // Método para establecer la dirección desde EnemyShooter
+    public void SetDirection(Vector3 dir)
+    {
+        direction = dir;
     }
 }
