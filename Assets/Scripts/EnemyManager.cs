@@ -11,6 +11,8 @@ public class EnemyManager : MonoBehaviour
     protected Animator animaciones;
     protected HealthManager enemyHealth;
     [SerializeField] private bool motion = true;
+    protected float contador_tiempo = 0f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {        

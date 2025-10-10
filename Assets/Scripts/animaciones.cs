@@ -3,6 +3,8 @@ using UnityEngine;
 public class Animaciones : Skills
 {
 
+
+
     private void CambiarEstadoAnimacion(string estado)
     {
         // Pone todo en false
@@ -31,7 +33,7 @@ public class Animaciones : Skills
             animaciones.SetTrigger("atacar");
         }
 
-        if (collision.gameObject.CompareTag("piso"))
+        if (collision.gameObject.CompareTag("piso") || collision.gameObject.CompareTag("PisoLento") || collision.gameObject.CompareTag("PisoLento"))
         {
             
             if (horizontal != 0)

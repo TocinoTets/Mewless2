@@ -56,7 +56,17 @@ public class Skills : PlayerMovement
             contadorSaltosJugador = 0;
             col.sharedMaterial = sinFriccion;
         }
+        if (collision.gameObject.CompareTag("PisoLento"))
+        {
+            velocidad = 6;
+            contadorSaltosJugador = 0;
+        }
+        else
+        {
+            velocidad = 8;
+        }
     }
+
     protected virtual void OnCollisionStay2D(Collision2D collision)
     {
         if (paredesAgarre && collision.gameObject.CompareTag("paredAgarre"))
@@ -64,5 +74,6 @@ public class Skills : PlayerMovement
             col.sharedMaterial = conFriccion;
             contadorSaltosJugador = 0;
         }
+
     }
 }

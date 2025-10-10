@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float velocidad;
+    [SerializeField] protected float velocidad;
     [SerializeField] protected float fuerzaSalto;
     protected bool puedeMoverse = true;
     protected Rigidbody2D rb;
