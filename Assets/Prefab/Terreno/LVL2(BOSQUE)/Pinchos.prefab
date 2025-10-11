@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 314059677894910759}
   - component: {fileID: 6674119248998755797}
   m_Layer: 0
-  m_Name: fondo
+  m_Name: Pinchos
   m_TagString: fondo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
