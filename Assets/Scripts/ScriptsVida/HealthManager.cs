@@ -19,6 +19,7 @@ public class HealthManager : MonoBehaviour , IHealth
         health -= damage;
         if (health <= 0)
         {
+            Destroy(gameObject);//sacar esto
             animaciones.SetTrigger("morir"); // falta la animacion de el personaje y el boos, cuando esten borrar el destroy de abajo
             
             if (gameObject.CompareTag("Player"))
@@ -46,4 +47,6 @@ public class HealthManager : MonoBehaviour , IHealth
     {
         Destroy(gameObject);
     }
+
+
 }

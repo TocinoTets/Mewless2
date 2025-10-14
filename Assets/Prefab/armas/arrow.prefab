@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad_balas: 3
-  "da\xF1o": 2
+  "da\xF1o": 5
 --- !u!70 &-3239398741742247522
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

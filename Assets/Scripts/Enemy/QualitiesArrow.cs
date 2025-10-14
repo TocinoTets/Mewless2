@@ -6,11 +6,13 @@ public class QualitiesArrow : MonoBehaviour
     [SerializeField] private float velocidad_balas;
     [SerializeField] private int daño;
     private HealthManager enemyHealth;
+    private Collider2D col;
 
     void Start()
     {
         enemyHealth = GetComponent<HealthManager>();
         Destroy(gameObject, 4f);
+        col = GetComponent<Collider2D>();
     }
 
 
@@ -21,13 +23,15 @@ public class QualitiesArrow : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Enemy"))
         {
             GameObject gameObjectColiciono = collision.gameObject;
            
             gameObjectColiciono.GetComponent<HealthManager>().TakeDamage(daño);
             Destroy(gameObject);
         }
+
     }
+
 
 }

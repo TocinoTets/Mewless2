@@ -6,7 +6,8 @@ public class Navegacion : MonoBehaviour
 
     public void inicio() 
     {
-        SceneManager.LoadScene("SampleScene"); 
+        Scene escenaActual = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(escenaActual.name);
     }
 
     public void salida()

@@ -138,13 +138,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07a79609b4c39a24784ed84aa5cf069e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distancia: 10
+  distancia: 13
   speed: 0
   danoAtaque: 0
   motion: 0
   flecha: {fileID: 4242543433450909427, guid: 0b0b4cfbd11823c46b79196dd61b6c0f, type: 3}
   salidaFlecha: {fileID: 4798561214607881659}
-  tiempo_entre_ataque: 1
+  tiempo_entre_ataque: 2
 --- !u!1 &4798561214607881659
 GameObject:
   m_ObjectHideFlags: 0

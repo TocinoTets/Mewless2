@@ -9,6 +9,7 @@ TagManager:
   - paredAgarre
   - fondo
   - PisoLento
+  - salida
   layers:
   - Default
   - TransparentFX

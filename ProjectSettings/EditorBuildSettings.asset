@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/WinScene.unity
     guid: 0a6a51e4137fddd429a220f3c264cecb
   - enabled: 1
+    path: Assets/Scenes/Nivel2(BOSQUE).unity
+    guid: 19b3328dd7caadf449a3b9e2c4f7a26d
+  - enabled: 1
+    path: Assets/Scenes/Nivel3(CASTILLO).unity
+    guid: 1df91073e3718ad42a4606da37fa37d7
+  - enabled: 1
     path: Assets/Scenes/deat.unity
     guid: 8d4084fa902df28458bcab2b2602ce2b
   m_configObjects:
