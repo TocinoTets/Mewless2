@@ -4,6 +4,7 @@ public class PlayerAtack : MonoBehaviour
 {
     [SerializeField] private float longitudAtaque;
     [SerializeField] private float dañoAtaque;
+
     [SerializeField] private GameObject spawnAtack;
 
     public float tiempoMaxEntreGolpes = 0.5f; // Tiempo máximo permitido entre golpes
@@ -88,5 +89,10 @@ public class PlayerAtack : MonoBehaviour
         Debug.Log("Tercer golpe");
         atack();
         // PONER ANIMACION
+    }
+
+    public void UpDateDamage(float multiplicador)
+    {
+        dañoAtaque *= multiplicador;
     }
 }

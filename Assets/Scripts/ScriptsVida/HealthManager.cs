@@ -13,17 +13,29 @@ public class HealthManager : MonoBehaviour , IHealth
         
     }
 
+    public void Update()
+    {
+        if (gameObject.CompareTag("Player"))
+        {
+            if (health > 100)
+            {
+                health = 100;
+            }
+        }
+    }
     //falta poner toda la animacion de cuando el personaje recibe daño y cuando muere
     public void TakeDamage(float damage) 
     {
+
         health -= damage;
         if (health <= 0)
         {
-            Destroy(gameObject);//sacar esto
+            Destroy(gameObject);//dejo esto hasta tener las otras anumaciones , asi puedo activar a la puerta de pasar de nivel
             animaciones.SetTrigger("morir"); // falta la animacion de el personaje y el boos, cuando esten borrar el destroy de abajo
             
             if (gameObject.CompareTag("Player"))
             {
+
                 int vidas_personaje = LivesController.vidas_personaje;
 
                 if (vidas_personaje <= 0)
@@ -47,6 +59,4 @@ public class HealthManager : MonoBehaviour , IHealth
     {
         Destroy(gameObject);
     }
-
-
 }
