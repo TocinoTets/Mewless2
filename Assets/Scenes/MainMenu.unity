@@ -2139,7 +2139,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1637358907}
         m_TargetAssemblyTypeName: Navegacion, Assembly-CSharp
-        m_MethodName: inicio
+        m_MethodName: tutorial
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

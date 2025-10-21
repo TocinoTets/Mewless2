@@ -3,6 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class Navegacion : MonoBehaviour
 {
+    
+    public void tutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
 
     public void inicio() 
     {
