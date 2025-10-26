@@ -17,7 +17,7 @@ public class salida : MonoBehaviour
     {
         if (boos == null)
         {
-            col.isTrigger = true;
+            col.isTrigger = false;
             sr.color = new Color(1f, 1f, 1f, 1f);
         }
         else
@@ -26,15 +26,12 @@ public class salida : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
-            SceneManager.LoadScene("Nivel2(BOSQUE)");
+            SceneManager.LoadScene("SampleScene");
         }
     }
-
-     
-
 }

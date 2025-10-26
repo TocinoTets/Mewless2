@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class FinTutorial : MonoBehaviour
+public class Fin_nivel2 : MonoBehaviour
 {
 
     [SerializeField] GameObject boos;
@@ -35,4 +35,3 @@ public class FinTutorial : MonoBehaviour
         }
     }
 }
-

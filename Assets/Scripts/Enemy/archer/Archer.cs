@@ -9,7 +9,6 @@ public class Archer: EnemyManager
     [SerializeField] GameObject flecha;
     [SerializeField] GameObject salidaFlecha;
     [SerializeField] private float tiempo_entre_ataque = 1f;
-    protected float contador_tiempo = 0f;
 
     protected override void Update()
     {

@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class QualitiesArrow : MonoBehaviour
@@ -5,14 +6,14 @@ public class QualitiesArrow : MonoBehaviour
 
     [SerializeField] private float velocidad_balas;
     [SerializeField] private int daño;
-    private HealthManager enemyHealth;
+    private Collider2D col;
 
     void Start()
     {
-        enemyHealth = GetComponent<HealthManager>();
         Destroy(gameObject, 4f);
+        col = GetComponent<Collider2D>();
     }
-
+    
 
     void Update()
     {
@@ -20,7 +21,10 @@ public class QualitiesArrow : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
+        if (collision.gameObject.CompareTag("piso"))
+        {
+            col.isTrigger = true;
+        }
         if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Enemy"))
         {
             GameObject gameObjectColiciono = collision.gameObject;
@@ -30,5 +34,11 @@ public class QualitiesArrow : MonoBehaviour
         }
 
     }
-
+    private void OnTriggerExit2D(Collider2D collision)
+{
+        if (collision.gameObject.CompareTag("piso"))
+        {
+            col.isTrigger = false;
+        }
+    }
 }

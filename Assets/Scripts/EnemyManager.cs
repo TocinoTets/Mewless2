@@ -6,11 +6,11 @@ public class EnemyManager : MonoBehaviour
 {
     protected GameObject PlayerLocate;
     [SerializeField] protected int distancia;
-    [SerializeField] private float speed;
+    [SerializeField] protected float speed;
     [SerializeField] protected float danoAtaque;
     protected Animator animaciones;
     protected HealthManager enemyHealth;
-    [SerializeField] private bool motion = true;
+    [SerializeField] protected bool motion = true;
     protected float contador_tiempo = 0f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
