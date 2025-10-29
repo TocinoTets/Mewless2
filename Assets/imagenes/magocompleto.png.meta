@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 98ebb67599d65fd4f85c45f3729ae9c5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2973476179229132769
+    second: magocompleto_0
+  - first:
+      213: -4470615787505373774
+    second: magocompleto_1
+  - first:
+      213: 6256850133168406504
+    second: magocompleto_2
+  - first:
+      213: -3782421077086096721
+    second: magocompleto_3
+  - first:
+      213: -4082486440887613953
+    second: magocompleto_4
+  - first:
+      213: 6489668382608918365
+    second: magocompleto_5
+  - first:
+      213: 553152786756005166
+    second: magocompleto_6
+  - first:
+      213: -5963009130879498517
+    second: magocompleto_7
+  - first:
+      213: -5708943867725110648
+    second: magocompleto_8
+  - first:
+      213: 211961128980987963
+    second: magocompleto_9
+  - first:
+      213: -3715344823879897980
+    second: magocompleto_10
+  - first:
+      213: 405319984809659072
+    second: magocompleto_11
+  - first:
+      213: 971180136477953778
+    second: magocompleto_12
+  - first:
+      213: -4827835166693509382
+    second: magocompleto_13
+  - first:
+      213: 6102978042022758933
+    second: magocompleto_14
+  - first:
+      213: 2102397374823328001
+    second: magocompleto_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: magocompleto_0
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 704
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e7c903b4d8e34920800000000000000
+      internalID: 2973476179229132769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magocompleto_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 704
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bd2d7aa0ae25f1c0800000000000000
+      internalID: -4470615787505373774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magocompleto_2
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 704
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8efbb50cb0cc4d650800000000000000
+      internalID: 6256850133168406504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magocompleto_3
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 704
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa2355d0214228bc0800000000000000
+      internalID: -3782421077086096721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magocompleto_4
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 646
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff58b8246381857c0800000000000000
+      internalID: -4082486440887613953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magocompleto_5
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 646
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d570d7f920fef0a50800000000000000
+      internalID: 6489668382608918365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magocompleto_6
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 645
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2deb1167813da700800000000000000
+      internalID: 553152786756005166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magocompleto_7
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 590
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be64481f9c22f3da0800000000000000
+      internalID: -5963009130879498517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magocompleto_8
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 590
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 882a991bcc1c5c0b0800000000000000
+      internalID: -5708943867725110648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magocompleto_9
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 591
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b304a17168901f200800000000000000
+      internalID: 211961128980987963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magocompleto_10
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 591
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48c6d824191707cc0800000000000000
+      internalID: -3715344823879897980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magocompleto_11
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 591
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ca42f2f06cff9500800000000000000
+      internalID: 405319984809659072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magocompleto_12
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 591
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fe0fa740335a7d00800000000000000
+      internalID: 971180136477953778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magocompleto_13
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 601
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af6381fae75100db0800000000000000
+      internalID: -4827835166693509382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magocompleto_14
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 591
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51a86cab13222b450800000000000000
+      internalID: 6102978042022758933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magocompleto_15
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 601
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 109ee0ff5473d2d10800000000000000
+      internalID: 2102397374823328001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      magocompleto_0: 2973476179229132769
+      magocompleto_1: -4470615787505373774
+      magocompleto_10: -3715344823879897980
+      magocompleto_11: 405319984809659072
+      magocompleto_12: 971180136477953778
+      magocompleto_13: -4827835166693509382
+      magocompleto_14: 6102978042022758933
+      magocompleto_15: 2102397374823328001
+      magocompleto_2: 6256850133168406504
+      magocompleto_3: -3782421077086096721
+      magocompleto_4: -4082486440887613953
+      magocompleto_5: 6489668382608918365
+      magocompleto_6: 553152786756005166
+      magocompleto_7: -5963009130879498517
+      magocompleto_8: -5708943867725110648
+      magocompleto_9: 211961128980987963
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
