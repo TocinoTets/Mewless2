@@ -81,7 +81,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 5160337174065941027, guid: 9fd7b74351a84b24eb0d8aa29f22884a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -278,7 +278,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1123893932193929782, guid: ae472e27578b2884bb67a318eba86c8d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.04
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 1123893932193929782, guid: ae472e27578b2884bb67a318eba86c8d, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -319,6 +319,10 @@ PrefabInstance:
     - target: {fileID: 3730981352941099153, guid: ae472e27578b2884bb67a318eba86c8d, type: 3}
       propertyPath: m_PreserveAspect
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404927799397065320, guid: ae472e27578b2884bb67a318eba86c8d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6236804476056751529, guid: ae472e27578b2884bb67a318eba86c8d, type: 3}
       propertyPath: m_SizeDelta.x

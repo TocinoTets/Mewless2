@@ -31,7 +31,7 @@ public class salida : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("Nivel2(BOSQUE)");
         }
     }
 }
